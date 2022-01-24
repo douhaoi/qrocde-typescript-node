@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "qrcode ",
   "main": "src/main.ts",
+  "bin": {
+    "create-qrcode": ".bin/create.ts",
+    "analysis-qrcode": ".bin/analysis.ts"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "ts-node src/main.ts"
@@ -12,6 +16,10 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^17.0.8",
+    "cac": "^6.7.12",
+    "jimp": "^0.16.1",
+    "qrcode-reader": "^1.0.4",
+    "qrcode-terminal": "^0.12.0",
     "ts-node": "^10.4.0",
     "tslib": "^2.3.1",
     "typescript": "^4.5.4"
